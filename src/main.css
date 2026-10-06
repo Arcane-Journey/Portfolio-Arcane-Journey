@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Ferrum";
+    src: url("assets/fonts/Ferrum.otf");
+}
+@font-face {
+    font-family: "Modern Antiqua";
+    src: url("assets/fonts/ModernAntiqua.ttf");
+}
+
+/* Page overrides */
+html
+{
+    background-color: #F7EFE3;
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+    scrollbar-gutter: stable both-edges; 
+}
+
+h1, h2, h3, h4
+{
+    
+    font-family: "Ferrum";
+    font-weight: normal;
+    color: #37164D;
+}
+h1
+{
+    /* font-size: 50px; */
+    font-size: clamp(2rem, 3vw, 5rem);
+}
+h2
+{
+    font-size: clamp(2rem, 2vw, 5rem);
+}
+h3
+{
+    font-size: clamp(2rem, 1vw, 5rem);
+}
+h4
+{
+    font-size: clamp(1.5rem, 0.75vw, 5rem);
+}
+
+p
+{
+    font-family: "Modern Antiqua";
+    font-weight: normal;
+    font-size: clamp(0.75rem, 1vw, 2rem);
+    color: #37164D;
+}
+
+
+/* General */
+.page-section
+{
+    scroll-margin-top: 120px; 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+.page-divider
+{
+    padding-top: 60px;
+}
+
+/* Headers */
+.section-header 
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.section-title 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.line-horizontal
+{
+    flex: 1;
+    height: 1px;
+    background-color: #b8860b;
+}
+
+.line-left
+{
+    margin-left: 75px;
+}
+
+.line-right
+{
+    margin-right: 75px;
+}
+
+.line-vertical
+{
+    width: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #b8860b;
+}
+
+.border-bg
+{
+    box-sizing: border-box; 
+    border: 10px solid transparent;
+    border-image-source: url("../assets/img/navigation-header-border.png");
+    
+    border-image-slice: 30 fill;
+    border-image-repeat: stretch;
+}
+
+.border-bg :is(p, h1, h2, h3, h4, li) 
+{
+    color: #9962C4;
+}
+
+

@@ -1,0 +1,66 @@
+.navigation-header 
+{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    justify-content: center; 
+    align-items: center;
+    
+    width: 100%;
+    height: 125px;
+    padding: 10px;
+
+    gap: 40px; 
+}
+
+.navigation-content a
+{
+    font-family: "Ferrum";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: #9962C4;
+}
+
+.navigation-logo img:hover
+{
+    content: url('../assets/img/logo-AJG-hover.png');
+}
+
+.navigation-logo img:active
+{
+    content: url('../assets/img/logo-AJG-click.png');
+}
+
+.navigation-content a:hover
+{
+    color: #FCE1B0;
+}
+
+.navigation-content a:active
+{
+    color: #9F7307;
+}
+
+.navigation-content
+{
+    display: flex;
+    gap: 20px; /* Space between "About me" and "Past Projects" */
+}
+
+.navigation-logo
+{
+    justify-items: center;
+    align-items: center;
+}
+.navigation-logo img 
+{
+    flex: 0;
+    height: 100%;
+    display: block;
+    filter: drop-shadow(0px 0px 1px #9962C4);
+}

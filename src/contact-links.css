@@ -1,0 +1,56 @@
+.contact-links-container
+{
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-links-left
+{
+    width: 50%;
+}
+
+.contact-links-right
+{
+    width: 50%;
+}
+
+.contact-links-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Stretches and crops cleanly to fill the box */
+}
+
+
+.links-list {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.links-list li {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.links-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 50px;  /* Set your desired icon width */
+    height: 50px; /* Set your desired icon height */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Assign the specific image files to each class */
+.icon-mail::before {
+    background-image: url('../assets/img/icon-mail.png');
+}
+
+.icon-github::before {
+    background-image: url('../assets/img/icon-github.png');
+}

@@ -1,0 +1,31 @@
+/* About Me */
+.about-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0px 10%;
+    flex: 0 0 300px;
+    align-items: stretch;
+}
+
+.about-image img 
+{
+    width: 25vw;
+    object-fit: cover;
+    aspect-ratio: 8 / 9;
+}
+
+.about-text
+{
+    align-content: flex-start;
+    padding-top: 15px;
+}
+
+.about-text-slogan
+{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #A27000;
+}

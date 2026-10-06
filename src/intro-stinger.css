@@ -1,0 +1,30 @@
+/* intro */
+.intro-bg
+{
+    background-image: url("../assets/img/arcane-nebula.jpg");
+}
+
+.intro-container
+{
+    padding-top: 225px;
+    padding-bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro-text-header
+{
+    color: #FCE1B0;
+    font-size: clamp(2rem, 5vw, 5rem);
+    margin: 0px;
+}
+
+.intro-text-footer
+{
+    color: #A07200;
+    font-size: clamp(2rem, 3vw, 5rem);
+    margin: 0px;
+    font-weight: normal;
+}
