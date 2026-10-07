@@ -1,10 +1,10 @@
 @font-face {
     font-family: "Ferrum";
-    src: url("/Portfolio-Arcane-Journey/assets/fonts/Ferrum.otf");
+    src: url("/Portfolio-Arcane-Journey/assets/fonts/Ferrum.otf"), url("../assets/fonts/Ferrum.otf");
 }
 @font-face {
     font-family: "Modern Antiqua";
-    src: url("/Portfolio-Arcane-Journey/assets/fonts/ModernAntiqua.ttf");
+    src: url("/Portfolio-Arcane-Journey/assets/fonts/ModernAntiqua.ttf"), url("../assets/fonts/ModernAntiqua.ttf");
 }
 
 /* Page overrides */
@@ -30,26 +30,26 @@ h1, h2, h3, h4
 h1
 {
     /* font-size: 50px; */
-    font-size: clamp(2rem, 3vw, 5rem);
+    font-size: 45px;
 }
 h2
 {
-    font-size: clamp(2rem, 2vw, 5rem);
+    font-size: 35px;
 }
 h3
 {
-    font-size: clamp(2rem, 1vw, 5rem);
+    font-size: 25px;
 }
 h4
 {
-    font-size: clamp(1.5rem, 0.75vw, 5rem);
+    font-size: 20px;
 }
 
 p
 {
     font-family: "Modern Antiqua";
     font-weight: normal;
-    font-size: clamp(0.75rem, 1vw, 2rem);
+    font-size: 15px;
     color: #37164D;
 }
 

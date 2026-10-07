@@ -1,4 +1,17 @@
 /* More About Me */
+@media screen and (max-width: 953px)
+{
+  .about-container
+  {
+    display:block;
+  }
+
+  .more-about-container
+  {
+    width: 100%;
+  }
+}
+
 .more-about-container
 {
     width: 33%;
@@ -7,7 +20,7 @@
 
 .more-about-container p
 {
-    font-size: clamp(0.5rem, 0.8vw, 2rem);
+    font-size: 14px;
 }
 
 .more-about-picture-container
@@ -40,7 +53,7 @@
   align-items: center;
   justify-content: center; 
   gap: 10px;
-  height: 40px;
+  height: auto;
 }
 
 .more-about-container li::before {

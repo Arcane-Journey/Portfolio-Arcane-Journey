@@ -27,6 +27,7 @@
         <div class="navigation-content">
             <a href="#works-in-progress">Works in Progress</a>
             <a href="#contact-links">Contact & Links</a>
+            <p id="screen-size">SIZE</p>
         </div>
     </header>
     
@@ -296,7 +297,7 @@
                 updatePage();
             })
         </script>
-        <!-- Update timestamps -->
+        <!-- Update timestamps and fields -->
         <script>
             const dateOfBirth = 2003;
             const currentYear = new Date().getFullYear()
@@ -318,6 +319,10 @@
                         element.innerHTML = element.innerHTML.replaceAll('{AGE}', age);
                     }
                 })
+
+                //TEMP: Screen Size
+                const screenSizeLabel = document.getElementById('screen-size');
+                screenSizeLabel.innerHTML = window.innerWidth;
             })
         </script>
     </body>
