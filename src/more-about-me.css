@@ -1,14 +1,29 @@
-/* More About Me */
-@media screen and (max-width: 953px)
+@media screen and (max-width: 1045px)
 {
   .about-container
   {
-    display:block;
+    display:flex;
+    flex-direction: column;
   }
 
   .more-about-container
   {
-    width: 100%;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 29px;
+  }
+
+  .more-about-container h1,
+  .more-about-container h2,
+  .more-about-container h3
+  {
+    text-align: center;
+  }
+
+  .more-about-picture-container
+  {
+    justify-content: center;
   }
 }
 

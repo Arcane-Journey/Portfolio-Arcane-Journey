@@ -7,10 +7,36 @@
     src: url("/Portfolio-Arcane-Journey/assets/fonts/ModernAntiqua.ttf"), url("../assets/fonts/ModernAntiqua.ttf");
 }
 
+@media screen and (max-width: 1045px)
+{
+    .line-vertical
+    {
+        /* flex: 1; */
+        height: 1px;
+        width: 100% !important;
+        margin: 0% !important;
+        background-color: var(--col-gold-dark);
+    }
+}
+
+/* Constants */
+:root
+{
+    /* Colors */
+    --col-bg: #F7EFE3;
+    
+    --col-gold-light: #FCE1B0;
+    --col-gold-dark: #b8860b;
+    --col-gold-shadow: #604505;
+
+    --col-purple-light: #9962C4;
+    --col-purple-dark: #37164D;
+}
+
 /* Page overrides */
 html
 {
-    background-color: #F7EFE3;
+    background-color: var(--col-bg);
     scroll-behavior: smooth;
 }
 body
@@ -25,7 +51,7 @@ h1, h2, h3, h4
     
     font-family: "Ferrum";
     font-weight: normal;
-    color: #37164D;
+    color: var(--col-purple-dark)
 }
 h1
 {
@@ -50,7 +76,7 @@ p
     font-family: "Modern Antiqua";
     font-weight: normal;
     font-size: 15px;
-    color: #37164D;
+    color: var(--col-purple-dark);
 }
 
 
@@ -92,7 +118,7 @@ p
 {
     flex: 1;
     height: 1px;
-    background-color: #b8860b;
+    background-color: var(--col-gold-dark);
 }
 
 .line-left
@@ -110,7 +136,7 @@ p
     width: 1px;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: #b8860b;
+    background-color: var(--col-gold-dark);
 }
 
 .border-bg
@@ -123,9 +149,13 @@ p
     border-image-repeat: stretch;
 }
 
-.border-bg :is(p, h1, h2, h3, h4, li) 
+.border-bg :is(h1)
 {
-    color: #9962C4;
+    color: var(--col-gold-light);
+}
+.border-bg :is(p, h2, h3, h4, li) 
+{
+    color: var(--col-purple-light)
 }
 
 

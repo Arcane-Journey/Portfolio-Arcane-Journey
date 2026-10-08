@@ -1,4 +1,3 @@
-/* intro */
 .intro-bg
 {
     background-image: url("../assets/img/arcane-nebula.jpg");
@@ -16,14 +15,14 @@
 
 .intro-text-header
 {
-    color: #FCE1B0;
+    color: var(--col-gold-light);
     font-size: clamp(2rem, 5vw, 5rem);
     margin: 0px;
 }
 
 .intro-text-footer
 {
-    color: #A07200;
+    color: var(--col-gold-dark);
     font-size: clamp(2rem, 3vw, 5rem);
     margin: 0px;
     font-weight: normal;

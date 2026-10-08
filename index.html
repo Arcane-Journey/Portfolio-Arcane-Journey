@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- Webpage Info -->
@@ -5,17 +6,18 @@
 
         <!-- CSS Import -->
         <link rel="stylesheet" type="text/css" href="src/main.css">
+        <link rel="stylesheet" type="text/css" href="src/header.css">
         <link rel="stylesheet" type="text/css" href="src/intro-stinger.css">
         <link rel="stylesheet" type="text/css" href="src/about-me.css">
         <link rel="stylesheet" type="text/css" href="src/more-about-me.css">
-        <link rel="stylesheet" type="text/css" href="src/contact-links.css">
-        <link rel="stylesheet" type="text/css" href="src/header.css">
         <link rel="stylesheet" type="text/css" href="src/past-projects.css">
+        <link rel="stylesheet" type="text/css" href="src/wips.css">
+        <link rel="stylesheet" type="text/css" href="src/contact-links.css">
     </head>
 
     
     <header class="navigation-header border-bg">
-        <div class="navigation-content">
+        <div class="navigation-content navigation-content-left">
             <a href="#about-me">About me</a>
             <a href="#past-projects">Past Projects</a>
         </div>
@@ -24,10 +26,9 @@
                 <img src="assets/img/logo-AJG.png">
             </a>
         </div>
-        <div class="navigation-content">
+        <div class="navigation-content navigation-content-right">
             <a href="#works-in-progress">Works in Progress</a>
             <a href="#contact-links">Contact & Links</a>
-            <p id="screen-size">SIZE</p>
         </div>
     </header>
     
@@ -192,14 +193,38 @@
                 <span class="line-horizontal line-left"></span>
                 <div class="section-title">
                     <span>✦</span>
-                    <h1>My past works:</h1>
+                    <h1>Current works in progress:</h1>
                     <span>✦</span>
                 </div>
                 <span class="line-horizontal line-right"></span>
             </div>
 
             <!-- Content -->
-            <!-- ADD HERE -->
+            <div class="wips-container">
+                <div class="wips-entry-container">
+                    <div class="wips-image">
+                        <img src="assets/img/wips/icon-JoaJ.png">
+                    </div>
+                    <div class="wips-desc">
+                        <span>An adventure into the world of the Tarot</span>
+                        <h1>Journey of a Jester</h1>
+                        <p>Travel through the lands of Mondurniste, a remote island far away from the outside world, where characters based on the Major Arcana live out their lives.</p>
+                        <p>But lately, unrest has been brewing in the shadows, and a mysterious force threatens to throw the island into chaos. It's up to you to help disperse this darkness on your way to learning more about who you truly are.</p>
+                    </div>
+                </div>
+                <div class="wips-entry-container">
+                    <div class="wips-image">
+                        <img src="assets/img/wips/icon-balatro.png">
+                    </div>
+                    <div class="wips-desc">
+                        <span>A mod that completely transforms the game</span>
+                        <h1>Balatro: Spells of the Arcane</h1>
+                        <p>Jimbo's scored himself a side gig as bartender at the Fool's Tavern, where brawls are regularly brewing!</p>
+                        <p>Use Spells to defeat blinds, and face off aginst Opponent Blinds with a new Battle system!</p>
+                        <p>This mod is my way of learning Lua, and to improve my pixel art.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="page-divider"></div>
 
@@ -233,22 +258,28 @@
             // 1. Store your project data neatly in an array
             const projects = [
                 {
-                    tag: "NARRATIVE EXPLORATION GAME",
-                    title: "WHISPERS OF THE OLD ROAD",
-                    desc: "A quiet journey through a kingdom that remembers every traveler. Explore forgotten ruins, recover fragments of folklore, and decide which stories deserve to live on.",
-                    img: "assets/img/placeholder-1-1.png" // Swap these with your actual image file paths
+                    tag: "My start in learning how to code",
+                    title: "Mod Creation for Keep Talking and Nobody Explodes",
+                    desc: "I got my start in programming since 2018 making mods for a puzzle game called Keep Talking and Nobody Explodes made by Steel Crate Games.\r\n\r\nI used this opportunity to learn about how to make stuff in C# Unity, creating new experiences that people have played and enjoyed (and sometimes not so much).",
+                    img: "assets/img/past-creations/icon-KTaNE.png" // Swap these with your actual image file paths
                 },
                 {
-                    tag: "2D METROIDVANIA",
-                    title: "SHADOW OF THE CASTLE",
-                    desc: "A fast-paced combat game set in an expansive, interconnected underworld. Master unique weapon stances and unlock historic secrets hidden beneath stone crypts.",
-                    img: "assets/img/placeholder-1-1.png"
+                    tag: "The first game design project for school",
+                    title: "VennData: A stealthy platformer/shooter game",
+                    desc: "A game set in a modernized distant future, you're part of a anti-cyberterrorist squad tasked with protecting the city from malicious hacker groups.\r\n\r\nYou and your team are sent out to deal with an physical attack on the HQ housing the central servers, and prevent them from shutting down the grid, before being framed for the attack and designated as outlaws.\r\n\r\nThis was the first project I did for my studies in Semester 4 Game Design. It was such a success, that it was featured at the Fontys Open Day 2024. ",
+                    img: "assets/img/past-creations/icon-VennData.png"
                 },
                 {
-                    tag: "PUZZLE ADVENTURE",
-                    title: "THE CLOCKWORK MAZE",
-                    desc: "Manipulate temporal mechanics to align sliding puzzle gears. Escape a mystical laboratory trapped inside a broken grandfather clock ticking out of timeline synchronization.",
-                    img: "assets/img/placeholder-1-1.png"
+                    tag: "A dive into learning VR and serious games",
+                    title: "Tomb Quest VR: an immersive exercising game",
+                    desc: "The first game project I did in a project team, and the first VR game I've worked on. This is a VR exercising game, aptly named \"Excergaming\", designed to make working up a sweat a bit more fun.\r\n\r\nOur submission was a roguelike / dungeon crawler game where the player has to navigate through rooms varying between high intensity exercises, and complex puzzles to catch your breath.",
+                    img: "assets/img/past-creations/icon-TombQuestVR.png"
+                },
+                {
+                    tag: "A game that transcended the virtual world",
+                    title: "The SmombieRun: a running competition about smartphone distractions",
+                    desc: "On 2 Juli 2026, me and Fontys held an official event with the goal of creating awareness for dangerous phone usage in public. We did this with the SmombieRun.\r\n\r\nA SmombieRun is a 400m race to the finish, but you must complete minigames and tasks on your phone to stay in the race. Making a mistake in the minigames earns you a strike. Fail too many times, gain too many strikes, and your race is over.\r\n\r\nNot only was this a lot of fun to make, it was also featured in news articles from Omroep Brabant and Eindhovens Dagblad.",
+                    img: "assets/img/past-creations/icon-SmombieRun.png"
                 }
             ];
 
@@ -319,10 +350,6 @@
                         element.innerHTML = element.innerHTML.replaceAll('{AGE}', age);
                     }
                 })
-
-                //TEMP: Screen Size
-                const screenSizeLabel = document.getElementById('screen-size');
-                screenSizeLabel.innerHTML = window.innerWidth;
             })
         </script>
     </body>
