@@ -34,9 +34,20 @@ jobs:
       - name: Prepare website files
         run: |
           test -f pages/main/index.html
+
           mkdir -p _site/src _site/assets
+
+          # Copy main page to website root
           cp -r pages/main/. _site/
+
+          # Copy additional HTML pages
+          cp -r pages/past-projects _site/
+          cp -r pages/works-in-progress _site/
+
+          # Copy CSS and JavaScript
           cp -r src/. _site/src/
+
+          # Copy images, fonts and other assets
           cp -r assets/. _site/assets/
 
       - name: Upload website files
