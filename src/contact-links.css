@@ -54,3 +54,7 @@
 .icon-github::before {
     background-image: url('../assets/img/icon-github.png');
 }
+
+.icon-steam::before {
+    background-image: url('../assets/img/icon-steam.png');
+}

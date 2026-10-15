@@ -71,12 +71,26 @@ h4
     font-size: 20px;
 }
 
-p
+p, li
 {
     font-family: "Modern Antiqua";
     font-weight: normal;
     font-size: 15px;
     color: var(--col-purple-dark);
+}
+
+a,
+a:visited
+{
+    color: var(--col-purple-dark);
+}
+a:hover
+{
+    color: var(--col-purple-light);
+}
+a:active
+{
+    color: var(--col-gold-dark);
 }
 
 
@@ -158,4 +172,12 @@ p
     color: var(--col-purple-light)
 }
 
-
+.about-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0px 10%;
+    flex: 0 0 300px;
+    align-items: stretch;
+}

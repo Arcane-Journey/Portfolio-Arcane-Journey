@@ -1,13 +1,8 @@
-.about-container
+.about-image
 {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding: 0px 10%;
-    flex: 0 0 300px;
-    align-items: stretch;
+    justify-content: center;
 }
-
 .about-image img 
 {
     width: 25vw;
