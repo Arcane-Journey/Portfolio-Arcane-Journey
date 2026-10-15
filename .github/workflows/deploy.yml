@@ -1,9 +1,10 @@
-name: Deploy website to GitHub Pages
+
+name: Deploy to NHKritzy
 
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 permissions:
@@ -30,13 +31,18 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Verify index.html exists
-        run: test -f ./pages/main/index.html
+      - name: Prepare website files
+        run: |
+          test -f pages/main/index.html
+          mkdir -p _site/src _site/assets
+          cp -r pages/main/. _site/
+          cp -r src/. _site/src/
+          cp -r assets/. _site/assets/
 
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './pages/main/'
+          path: './_site/'
 
       - name: Deploy to GitHub Pages
         id: deployment
