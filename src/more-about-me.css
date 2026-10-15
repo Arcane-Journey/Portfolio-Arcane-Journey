@@ -33,11 +33,6 @@
     justify-items: center;
 }
 
-.more-about-container p
-{
-    font-size: 14px;
-}
-
 .more-about-picture-container
 {
     display: flex;

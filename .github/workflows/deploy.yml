@@ -32,29 +32,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Prepare website files
-        run: |
-          test -f pages/main/index.html
-
-          # Create deployment directories
-          mkdir -p _site/src _site/assets
-
-          # Copy main website
-          cp -r pages/main/. _site/
-
-          # Copy additional pages if they exist
-          if [ -d "pages/past-projects" ]; then
-            cp -r pages/past-projects _site/
-          fi
-
-          if [ -d "pages/works-in-progress" ]; then
-            cp -r pages/works-in-progress _site/
-          fi
-
-          # Copy CSS and JavaScript
-          cp -r src/. _site/src/
-
-          # Copy images, fonts and other assets
-          cp -r assets/. _site/assets/
+        run: python3 build.py
 
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3

@@ -1,3 +1,17 @@
+@media screen and (max-width: 1045px)
+{
+    .about-image
+    {
+        min-width: 400px !important;
+    }
+    .about-image img 
+    {
+        width: fit-content !important;
+    }
+    
+    
+}
+
 .about-image
 {
     display: flex;
@@ -22,4 +36,5 @@
     font-style: italic;
     font-weight: bold;
     color: var(--col-gold-dark);
+    filter: drop-shadow(0 0 10px var(--col-gold-shadow));
 }

@@ -1,3 +1,12 @@
+@media screen and (max-width: 1045px)
+{
+    .navigation-content-text
+    {
+        max-width: 115px !important;
+        text-align: center;
+    }
+}
+
 .navigation-header 
 {
     display: flex;
@@ -20,6 +29,12 @@
 {
     display: flex;
     gap: 5vw;
+    flex: 1;
+}
+
+.navigation-content-text
+{
+    max-width: none;
 }
 
 .navigation-content-right
