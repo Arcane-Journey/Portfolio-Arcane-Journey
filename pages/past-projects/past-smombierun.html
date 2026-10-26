@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Webpage Info -->
+        <title>Arcane Journey Games &#128966; Main Menu</title>
+        <link rel="icon" href="/assets/img/icon-AJG.png">
+
+        <!-- CSS Import -->
+        <link rel="stylesheet" type="text/css" href="/src/main.css">
+        <link rel="stylesheet" type="text/css" href="/src/page/main.css">
+        <link rel="stylesheet" type="text/css" href="/src/header.css">
+        <link rel="stylesheet" type="text/css" href="/src/intro-stinger.css">
+        <link rel="stylesheet" type="text/css" href="/src/contact-links.css">
+
+        <!-- Scripts Import -->
+        <script src="/src/scripts/timestamps.js"></script>
+        <style>
+            .sources ul 
+            {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .sources li 
+            {
+                display: flex;
+                align-items: start;
+                justify-content: stretch; 
+                gap: 10px;
+                margin-bottom: 25px;
+                height: auto;
+            }
+
+            .sources li::before 
+            {
+                content: "";
+                flex: 0 0 20px;
+                width: 20px;
+                height: 20px;
+                background-image: url("/assets/img/icon-list.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        </style>
+    </head>
+
+    
+    <header class="navigation-header border-bg">
+        <div class="navigation-content navigation-content-right">
+            <!-- <a href="#about-me">About me</a>
+            <a href="#past-projects">Past Projects</a> -->
+        </div>
+        <div class="navigation-logo">
+            <a href="/">
+                <img src="/assets/img/logo-AJG.png">
+            </a>
+        </div>
+        <div class="navigation-content navigation-content-right">
+            <!-- <a href="#works-in-progress">Works in Progress</a>
+            <a href="#contact-links">Contact & Links</a> -->
+        </div>
+    </header>
+
+    <body>
+        <!-- Slogan Banner -->
+        <div class="page-section" id="top"">
+
+            <video
+                class="intro-background-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="/assets/img/smombierun/intro-smombierun.png"
+                aria-hidden="true"
+            >
+                <source
+                    src="/assets/vid/trailer-smombierun.mp4"
+                    type="video/mp4"
+                >
+            </video>
+
+
+            <div class="intro-container">
+                <img src="/assets/img/smombierun/logo-smombierun.png" style="height: 500px;">
+                <h2 class="intro-text-footer">A game that created a real world event</h2>
+            </div>
+        </div>
+        <div class="section-title">
+            <span class="line-horizontal line-left"></span>
+            <span>&#128966;</span>
+            <h1>About the project:</h1>
+            <span>&#128966;</span>
+            <span class="line-horizontal line-right"></span>
+        </div>
+        <div class="about-container">
+            <div class="journey-desc">
+                <p>Picture this: you're walking down the street, and suddenly someone bumps into you while they're looking down at their phone and not paying attention. They're like zombies constantly on their phones, or basically, a "Smombie"!</p>
+                <p>The SmombieRun was an initiative by Fontys Hogescholen, led by Rens van der Vorst, to create awareness of unsafe phone usage in public. And what better way to do that then to organize a marathon event where people must stay busy on their phones, all with a nice zombie theme to go with it?</p>
+                <p>The goal is to run a certain amount of laps or distance, all while completing minigames and tasks on your phone. If you make a mistake, you gain a strike. Three strikes, and you're out of the race.</p>
+                <p>The event was held on 2 July 2026, and was covered by multiple news organizations such as Eindhovens Dagblad, Omroep Brabant, and Brabants Dagblad. You can find the sources at the bottom of the page.</p>
+            </div>
+            <div class="journey-learn">
+                <div class="section-title">
+                    <span class="line-horizontal line-left"></span>
+                    <span>&#128966;</span>
+                    <h2>What I learnt from the Journey:</h2>
+                    <span>&#128966;</span>
+                    <span class="line-horizontal line-right"></span>
+                </div>
+                <ul>
+                    <li><b>ASP.NET Webservices:</b> in order to keep track of the ongoing events, and make sure game sessions run synchronous, I learnt how to set up my own ASP.NET webservice with built-in database to store sessions and handle traffic via WebSockets.</li>
+                    <li><b>PurrNet Multiplayer:</b> on the Client side, I used PurrNet (an open-source networking library) to communicate with my ASP.NET services, being able to create, join, start and end sessions from the respective devices.<br><br>The devices were then split into the "Organizer" and the "Players" depending on who made the server.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-divider"></div>
+
+        <div class="page-section border-bg">
+            <div class="section-title">
+                <span class="line-horizontal line-left"></span>
+                <span>&#128966;</span>
+                <h1>Pictures of the Journey:</h1>
+                <span>&#128966;</span>
+                <span class="line-horizontal line-right"></span>
+            </div>
+            <div class="project-photos-container">
+                <div class="project-photo">
+                    <img src="/assets/img/smombierun/smombierun-serverclient.png">
+                    <h2>Online Multiplayer Gameplay</h2>
+                    <p>The organizer can see all current players, and how many strikes they have made, while the players continuously play the minigames.</p>
+                </div>
+                <div class="project-photo">
+                    <img src="/assets/img/smombierun/smombierun-gameover.png">
+                    <h2>Strike System</h2>
+                    <p>In order to keep players hooked onto their phone, I added a strike system that forces them to not make mistakes. 3 strikes, and you're out.</p>
+                </div>
+                <div class="project-photo">
+                    <img src="/assets/img/smombierun/smombierun-newspapers.png">
+                    <h2>Covered by News Outlets</h2>
+                    <p>Various news outlets showed up to see the event live and interview the participants.<br><br>While the event itself was a bit bumpy, everyone still had a fun time.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-section">
+            <div class="section-title">
+                <span class="line-horizontal line-left"></span>
+                <span>&#128966;</span>
+                <h1>Sources used:</h1>
+                <span>&#128966;</span>
+                <span class="line-horizontal line-right"></span>
+            </div>
+            <div class="about-container">
+                <ul class="sources">
+                    <li>
+                        <a href="https://www.omroepbrabant.nl/nieuws/6015863/zombies-meppen-tijdens-het-hardlopen-een-wereldprimeur-voor-fontys"><b>Omroep Brabant:</b> "Zombies meppen tijdens het hardlopen, een wereldprimeur voor Fontys"</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ed.nl/eindhoven/starend-naar-je-smartphone-een-sprintje-trekken-eindhoven-heeft-primeur-met-eerste-smombierun~a8548f48"><b>Eindhovens Dagblad:</b> "Starend naar je smartphone een sprintje trekken: Eindhoven heeft primeur met eerste Smombierun"</a>
+                    </li>
+                    <li>
+                        <a href="https://www.bd.nl/videos/productie/zo-gaat-het-er-aan-toe-tijdens-de-smombierun-13645663"><b>Brabants Dagblad:</b> "Zo gaat het er aan toe tijdens de 'Smombierun' in Eindhoven"</a>
+                    </li>
+                    <li>
+                        <a href="https://nl.linkedin.com/posts/rensvandervorst_smombierun-wijzijnfontys-ethics-activity-7478703126724878338-C0FH?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy"><b>LinkedIn:</b> Bijdrage van Rens van der Vorst (picture of news articles)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Find me here -->
+        <div class="page-section border-bg" id="contact-links">
+            <div class="contact-links-container">
+                <div class="contact-links-left">
+                    <h2>Also find me in these places:</h2>
+                    <ul class="links-list">
+                        <li class="icon-mail"><p>Business.kritzy@gmail.com</p></li>
+                        <li class="icon-github"><p>Github.com/Kritzyy</p></li>
+                    </ul>
+                </div>
+                <div class="contact-links-right">
+                    <img src="/assets/img/logo-footer.png">
+                </div>
+            </div>
+            <div class="page-divider"></div>
+            <div class="section-header">
+                <span class="line-horizontal line-left"></span>
+                <div class="section-title">
+                    <h4>{YEAR} Arcane Journey</h4>
+                </div>
+                <span class="line-horizontal line-right"></span>
+            </div>
+        </div>
+    </body>
+</html>

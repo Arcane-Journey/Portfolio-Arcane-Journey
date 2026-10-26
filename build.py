@@ -29,5 +29,12 @@ for name in ["src", "assets"]:
     if source.is_dir():
         shutil.copytree(source, output / name)
 
+        error_page = output / "ohno!.html"
+
+if not error_page.is_file():
+    raise FileNotFoundError("Custom 404 page not found!")
+
+shutil.copy2(error_page, output / "404.html")
+
 print("Website built successfully in _site/")
 exit(0)

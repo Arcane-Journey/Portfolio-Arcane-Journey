@@ -97,10 +97,15 @@ a:active
 /* General */
 .page-section
 {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+    isolation: isolate;
+
     scroll-margin-top: 120px; 
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: auto;
     
 }
