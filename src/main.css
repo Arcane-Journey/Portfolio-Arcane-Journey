@@ -115,11 +115,19 @@ a:active
     padding-top: 60px;
 }
 
+.disclaimer
+{
+    color: grey !important;
+    font-style: italic !important;
+    text-align: center !important;
+}
+
 /* Headers */
 .section-header 
 {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
 
 }
